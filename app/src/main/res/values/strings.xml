@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MapsGoogleApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="bbuscar">Buscar</string>
+    <string name="bmaptipe">map tipe</string>
+    <string name="bzoomin">^</string>
+    <string name="bzoomout">v</string>
+    <string name="bok">ok</string>
+    <string name="tvubicacion">Ubicacion</string>
+    <string name="bcambiarubicacion">Cambiar Ubicacion</string>
+    <string name="bokradio">ok</string>
+    <string name="bradio">Defina Radio de Alarma</string>
+    <string name="switchiniciarservicio">Iniciar servicio</string>
+    <string name="settings">Settings</string>
+    <string name="guardar">guardar</string>
+</resources>

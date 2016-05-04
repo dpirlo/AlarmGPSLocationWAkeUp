@@ -1,0 +1,83 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1"
+            android:layout_gravity="left"
+            android:inputType="none"
+            android:layout_weight="55" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bbuscar"
+            android:id="@+id/button"
+            android:onClick="buscar"
+            android:layout_weight="1"
+            android:layout_gravity="left" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bmaptipe"
+            android:id="@+id/button2"
+            android:onClick="maptipe"
+            android:layout_weight="1"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:baselineAligned="false">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="0dp"
+            android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_weight="1"
+            android:layout_gravity="left" />
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bzoomin"
+            android:id="@+id/zoomin"
+            android:layout_gravity="right"
+            android:nestedScrollingEnabled="false"
+            android:onClick="zoom" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bzoomout"
+            android:id="@+id/zoomout"
+            android:layout_gravity="right"
+            android:onClick="zoom" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bok"
+                style="@style/Base.Theme.AppCompat.Light"
+                android:onClick="bok"
+                android:id="@+id/bok" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
